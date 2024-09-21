@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaYoo MDF 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <!-- mobile ui -->
+        <div class="flex justify-center bg-white">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-1 bg-gray-200">
+
+                        <!-- amount  display-->
+                        <div class="stats shadow bg-slate-100 text-gray-500">
+                            <div class="stat">
+                            <div id="display-amount" class="stat-value">9400</div>
+                            <div class="stat-desc text-gray-500 font-semibold">Total amount</div>
+                            </div>
+                        </div>
+                        <!-- divider -->
+                        <div class="divider"></div>
+                        <!-- button -->
+                        <div class="">
+                          <button id="btn-add-money-feature" class=" btn bg-slate-700 border-none p-2 text-gray-200">Add money</button>
+                          <button id="btn-cash-out-feature" class=" btn bg-slate-700 border-none p-2 text-gray-200">Cash Out</button>
+                          <button id="btn-history-feature" class=" btn bg-slate-700 border-none p-2 text-gray-200">Feature</button>
+                        </div>
+                        <!-- divider -->
+                        <div class="divider "></div>
+                        <!-- form layout -->
+                        <div id="add-hidden" class="hidden rounded-2xl bg-gray-300">
+                            <form class="card-body py-2">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text text-gray-500">Add Amount</span>
+                                </label>
+                                <input id="inter-amount" type="text" placeholder="Amount" class="input input-bordered bg-slate-200" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text text-gray-500">Pin Number</span>
+                                </label>
+                                <input id="add-pin" type="password" autocomplete="off" placeholder="Enter The Pin" class="input input-bordered bg-slate-200" required />
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="btn-add" class="btn btn-primary">Add</button>
+                              </div>
+                            </form>
+                        </div>
+                        <!-- form layout 2 -->
+                        <div id="cash-out-section" class="rounded-2xl bg-gray-300">
+                          <form id="cash-hidden" class="card-body py-2">
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text text-gray-500">Add Amount</span>
+                              </label>
+                              <input id="add-amount" type="text" placeholder="Amount" class="input input-bordered bg-slate-200" required />
+                            </div>
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text text-gray-500">Pin Number</span>
+                              </label>
+                              <input id="out-pin" type="password" autocomplete="off" placeholder="Enter The Pin" class="input input-bordered bg-slate-200" required />
+                            </div>
+                            <div class="form-control mt-6">
+                              <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                            </div>
+                          </form>
+                      </div>
+                     <!-- History section -->
+                     <div id="history-hidden" class="hidden">
+                      <h1>Your Transition History</h1>
+                     </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/utiliti.js"></script>
+    <script src="js/addmoney.js"></script>
+    <script src="js/Section.js"></script>
+    <script src="js/cashoutfunction.js"></script>
+</body>
+</html>
